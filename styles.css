@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 5% 80% 5%;
+  gap: 4px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  display: grid;
+  background-color: #393f4d;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.menu ul,
+.menu li {
+  font-size: 16px;
+}
+
+.sidebar {
+  display: grid;
+  background-color: #c50208;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  gap: 50px;
+}
+
+.sidebar .photo {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 10px;
+  padding: 85px;
+}
+
+.sidebar .side-content {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 85px;
+}
+
+.nav {
+  background-color: #c50208;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.article {
+  background-color: #bccbde;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #393f4d;
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navcontents {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.card {
+  height: 200px;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.menu {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.headerlinks {
+  display: grid;
+  grid-template-columns: ifr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px;
+}
+.linkone {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.linktwo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.linkthree {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.linkfour {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
